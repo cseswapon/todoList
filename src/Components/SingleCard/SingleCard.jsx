@@ -5,13 +5,14 @@ import { FaClipboardList } from "react-icons/fa";
 import { HiOutlineChatAlt2 } from "react-icons/hi";
 import { GrAttachment } from "react-icons/gr";
 import { CgCalendarDates } from "react-icons/cg";
-
+import img1 from '../../../public/images/avatarF.jpg'
+import img2 from '../../../public/images/avatarM.png'
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const SingleCard = ({
   style,
-  data: { img1, img2, clientName, description, rating, chat, attach, date },
+  data: { clientName, description, rating, chat, attach, date },
 }) => {
   const [show, setShow] = useState(false);
   const [atch, setAtch] = useState(attach);
